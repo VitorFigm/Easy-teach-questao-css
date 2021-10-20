@@ -36,23 +36,11 @@ body {
   }
 }
 
-// $item-count: 3;
-// @for $i from 1 through $item-count {
-//   .item-#{$i} {
-//     grid-area: item-#{$i};
-//   }
-// }
-
-#item-1 {
-  grid-area: item-1;
-}
-
-#item-2 {
-  grid-area: item-2;
-}
-
-#item-3 {
-  grid-area: item-3;
+$item-count: 3;
+@for $i from 1 through $item-count {
+  #item-#{$i} {
+    grid-area: item-#{$i};
+  }
 }
 
 .color-blue {
